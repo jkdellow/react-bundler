@@ -21,3 +21,18 @@ See [index.html](https://github.com/sevenleaps/react-webpack-wrapper-example/blo
 2. Update method name and the output file names in the two webpack config files.
 3. Update index.html
 3. Run the usage steps.
+
+### Using in a non-react website
+
+built file goes in the Resources folder
+
+in wrapper view: script tag goes in Head, referencing the .js file
+
+in page view: in body:
+
+<div id='content'>
+<script dangerouslySetInnerHTML = {{__html: `
+  [functionName]([parameters], document.getElementById("content"));
+`}} />
+
+where the ... sets variables and calls the js function.

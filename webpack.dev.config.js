@@ -2,9 +2,9 @@ module.exports = {
   entry:  './wrapper.js',
   output: {
       libraryTarget: 'var',
-      library: 'showCatalog',
+      library: 'showEvent',
       path:     'builds',
-      filename: 'chat-template.js',
+      filename: 'event-tile.js',
   },
   module: {
       loaders: [
