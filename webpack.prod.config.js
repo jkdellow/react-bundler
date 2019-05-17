@@ -4,9 +4,9 @@ module.exports = {
   entry:  './wrapper.js',
   output: {
       libraryTarget: 'var',
-      library: 'showChatTemplate',
+      library: 'showEvent',
       path:     'builds',
-      filename: 'chat-template-min.js',
+      filename: 'event-tile-min.js',
   },
   module: {
       loaders: [
